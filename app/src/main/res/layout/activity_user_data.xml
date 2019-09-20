@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/basicDetailRl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:background="@drawable/shadedarkgreen">
+
+        <TextView
+            android:id="@+id/raw2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SMART LIBRARY"
+            android:textSize="40sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/raw2"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="23sp"
+                android:text="Libraries were full of ideas – perhaps the most dangerous and powerful of all weapons."
+                android:textAlignment="center"
+                android:layout_marginBottom="26dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginEnd="18dp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/userName"
+                android:layout_below="@id/text1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/curve"
+                android:backgroundTint="@color/white">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/userNameEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="18sp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginBottom="12dp"
+                        android:textColor="@color/lightblack"
+                        android:hint="Enter your Name"
+                        android:background="@null"
+                        android:layout_centerInParent="true"/>
+                </RelativeLayout>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/raw5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Provide your details as mentioned on College ID - Card"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:layout_below="@id/userName"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"/>
+
+            <Button
+                android:id="@+id/nextBt"
+                android:layout_marginTop="30dp"
+                android:layout_below="@id/raw5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="16dp"
+                android:background="@drawable/connect_button"
+                android:backgroundTint="@color/mainappcolor"
+                android:text="Next"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/detailRl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="@drawable/shadedarkgreen">
+
+        <TextView
+            android:id="@+id/raw1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Gender"
+            android:textColor="@color/white"
+            android:textSize="26sp"
+            android:layout_marginTop="18dp"
+            android:layout_marginStart="18dp" />
+
+        <LinearLayout
+            android:id="@+id/genderLl"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:weightSum="2"
+            android:layout_below="@id/raw1"
+            android:layout_marginTop="22sp">
+
+            <RelativeLayout
+                android:id="@+id/boyRl"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/boySrc"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_boy"
+                    android:tint="@color/grey"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Boy"
+                    android:layout_below="@id/boySrc"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/white"
+                    android:textSize="21sp"
+                    android:layout_marginTop="12dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/girlRl"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/girlSrc"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_girl"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:tint="@color/grey"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Girl"
+                    android:layout_below="@id/girlSrc"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/white"
+                    android:textSize="21sp"
+                    android:layout_marginTop="12dp" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/branchSp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/genderLl"
+            android:background="@drawable/curve"
+            android:spinnerMode="dropdown"
+            android:textColor="@color/black"
+            android:layout_marginTop="100dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"/>
+
+        <Spinner
+            android:id="@+id/semSp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/branchSp"
+            android:background="@drawable/curve"
+            android:spinnerMode="dropdown"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/black"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"/>
+
+        <Spinner
+            android:id="@+id/collegeSp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/semSp"
+            android:background="@drawable/curve"
+            android:spinnerMode="dropdown"
+            android:textColor="@color/black"
+            android:layout_margin="15dp" />
+
+        <Button
+            android:id="@+id/finishBt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Finish"
+            android:background="@drawable/connect_button"
+            android:layout_alignParentBottom="true"
+            android:backgroundTint="@color/redOk"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="26dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/verifyRl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shademix"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/raw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload your College ID card image to verify your details"
+            android:textColor="@color/lightblack"
+            android:textStyle="bold|italic"
+            android:textSize="21sp"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"/>
+
+        <ImageView
+            android:id="@+id/idcardImgBt"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_below="@id/raw"
+            android:layout_marginTop="36dp"
+            android:scaleType="fitXY"
+            android:src="@color/greenOk" />
+
+        <Button
+            android:id="@+id/saveBt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:layout_below="@id/idcardImgBt"
+            android:background="@drawable/connect_button"
+            android:backgroundTint="@color/redOk"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="26dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

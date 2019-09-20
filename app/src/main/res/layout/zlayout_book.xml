@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="150dp">
+
+    <TextView
+        android:id="@+id/bookNameTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/lightblack"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="26dp"
+        android:maxLines="2" />
+
+    <TextView
+        android:id="@+id/publicationTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bookNameTv"
+        android:layout_marginTop="6dp"
+        android:textSize="15sp"
+        android:textColor="@color/lightblack"
+        android:layout_marginStart="10dp" />
+
+    <TextView
+        android:id="@+id/authorTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/publicationTv"
+        android:layout_marginTop="6dp"
+        android:textSize="15sp"
+        android:textColor="@color/lightblack"
+        android:layout_marginStart="10dp" />
+
+    <TextView
+        android:id="@+id/statusTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="true"
+        android:layout_marginEnd="16dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:textSize="15sp"
+        android:textColor="@color/lightblack"
+        android:layout_marginStart="10dp" />
+
+    <TextView
+        android:id="@+id/locationTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/authorTv"
+        android:layout_marginTop="6dp"
+        android:textSize="15sp"
+        android:textColor="@color/lightblack"
+        android:layout_marginStart="10dp" />
+
+    <TextView
+        android:id="@+id/issueBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Issue"
+        android:layout_below="@id/authorTv"
+        android:layout_marginEnd="14dp"
+        android:textSize="18sp"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/curve"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/greenOk"
+        android:padding="8dp"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:id="@+id/downloadBt"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_toStartOf="@id/issueBt"
+        android:layout_below="@id/statusTv"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"
+        android:visibility="visible"
+        android:src="@drawable/ic_file_download_lime_800_24dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lightblack"
+        android:alpha="0.2"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

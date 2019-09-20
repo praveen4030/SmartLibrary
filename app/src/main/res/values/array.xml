@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="array_semester">
+        <item>Select Semester</item>
+        <item>1 Sem</item>
+        <item>2 Sem</item>
+        <item>3 Sem</item>
+        <item>4 Sem</item>
+        <item>5 Sem</item>
+        <item>6 Sem</item>
+        <item>7 Sem</item>
+        <item>8 Sem</item>
+
+    </string-array>
+
+    <string-array name="array_college">
+
+        <item>Select College</item>
+        <item>NIT Jalandhar</item>
+        <item>LPU</item>
+        <item>Thapar College</item>
+        <item>DAV College</item>
+        <item>Other</item>
+
+    </string-array>
+
+
+    <string-array name="array_user_branch">
+        <item>Select Branch</item>
+        <item>@string/cse</item>
+        <item>@string/ece</item>
+        <item>@string/ice</item>
+        <item>@string/ee</item>
+        <item>@string/me</item>
+        <item>@string/it</item>
+        <item>@string/che</item>
+        <item>@string/ipe</item>
+        <item>@string/cv</item>
+        <item>@string/bt</item>
+        <item>@string/tt</item>
+        <item>@string/hum</item>
+        <item>@string/phy</item>
+        <item>@string/chem</item>
+        <item>@string/maths</item>
+    </string-array>
+
+
+</resources>

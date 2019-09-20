@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="9dp">
+
+    <ImageView
+        android:id="@+id/downloadBt"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/ic_star_blue_grey_200_24dp"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:id="@+id/subjectTv"
+        android:layout_toEndOf="@id/downloadBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Circuit Theory"
+        android:textSize="19sp"
+        android:textColor="@color/lightblack"
+        android:layout_marginStart="12dp" />
+
+    <TextView
+        android:id="@+id/semMinTv"
+        android:layout_toEndOf="@id/downloadBt"
+        android:layout_below="@id/subjectTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Semester 1 Minor 1"
+        android:textSize="14sp"
+        android:textColor="@color/grey"
+        android:layout_marginStart="12dp" />
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/ic_file_download_lime_800_24dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"/>
+
+</RelativeLayout>

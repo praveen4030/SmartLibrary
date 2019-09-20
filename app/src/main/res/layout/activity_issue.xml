@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/infoRl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bookRl"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/timerTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Timer"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:textSize="32sp"
+            android:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/codeTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your security Code is : 722"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/timerTv"
+            android:layout_marginTop="40dp"
+            android:textColor="@color/lightblack"
+            android:textSize="26sp"
+            android:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/infoTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Now please scan the book available in book shelve scanner then enter this security code and you are done."
+            android:layout_below="@id/codeTv"
+            android:layout_marginTop="36dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginEnd="14dp"
+            android:visibility="visible"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bookRl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:background = "@color/lightgrey">
+
+        <TextView
+            android:id="@+id/bookNameTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Book Name"
+            android:textSize="27sp"
+            android:textColor="@color/lightblack"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold|italic"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"/>
+
+        <TextView
+            android:id="@+id/publicationTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Publication"
+            android:textSize="20sp"
+            android:layout_below="@id/bookNameTv"
+            android:textColor="@color/lightblack"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/authorTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Author"
+            android:layout_below="@id/publicationTv"
+            android:textSize="19sp"
+            android:textColor="@color/lightblack"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/locationTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Location"
+            android:layout_below="@id/authorTv"
+            android:textSize="19sp"
+            android:textColor="@color/lightblack"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/statusTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/locationTv"
+            android:textSize="17sp"
+            android:textColor="@color/lightblack"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="12dp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:background="@color/littlelightgrey">
+
+        <Button
+            android:id="@+id/cancelBt"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/curve"
+            android:backgroundTint="@color/greenOk"
+            android:textColor="@color/white"
+            android:text="Cancel"
+            android:padding="8dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginStart="24sp"/>
+
+        <Button
+            android:id="@+id/issueBt"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/curve"
+            android:backgroundTint="@color/redOk"
+            android:textColor="@color/white"
+            android:text="Issue Book"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="8dp"
+            android:layout_marginEnd="24dp" />
+
+    </LinearLayout>
+</RelativeLayout>

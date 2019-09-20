@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="12dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp">
+
+        <TextView
+            android:id="@+id/bookNameTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Book Name"
+            android:textSize="21sp"
+            android:textColor="@color/lightblack"
+            android:textStyle="bold|italic"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"/>
+
+        <TextView
+            android:id="@+id/publicationTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Publication"
+            android:textSize="21sp"
+            android:layout_below="@id/bookNameTv"
+            android:textColor="@color/lightblack"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="6dp"/>
+
+        <TextView
+            android:id="@+id/authorTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Author"
+            android:layout_alignParentEnd="true"
+            android:textSize="21sp"
+            android:textColor="@color/grey"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"/>
+
+        <TextView
+            android:id="@+id/statusTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="jbwdw"
+            android:layout_below="@id/publicationTv"
+            android:textSize="15sp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:id="@+id/issueBt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/curve"
+            android:backgroundTint="@color/redOk"
+            android:textColor="@color/white"
+            android:text="Issue Book"
+            android:padding="8dp"
+            android:layout_below="@id/statusTv"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="24dp"
+            android:layout_marginTop="12dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/curve"
+            android:backgroundTint="@color/greenOk"
+            android:textColor="@color/white"
+            android:text="Cancel"
+            android:padding="8dp"
+            android:layout_below="@id/statusTv"
+            android:layout_toStartOf="@id/issueBt"
+            android:layout_marginEnd="24dp"
+            android:layout_marginTop="12dp"/>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

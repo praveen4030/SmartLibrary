@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <RelativeLayout
+            android:id="@+id/cseRl"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/raw1"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:text="C"
+                android:textSize="28sp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/yellow"
+                android:background="@drawable/curve"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/raw1"
+                android:text="CSE"
+                android:textAlignment="center"
+                android:textColor="@color/lightblack"
+                android:textSize="19sp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/eceRl"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/raw2"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:text="E"
+                android:textSize="28sp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/redOk"
+                android:background="@drawable/curve"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/raw2"
+                android:text="ECE"
+                android:textAlignment="center"
+                android:textColor="@color/lightblack"
+                android:textSize="19sp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/iceRl"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/raw3"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:text="I"
+                android:textSize="28sp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/greenOk"
+                android:background="@drawable/curve"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/raw3"
+                android:text="ICE"
+                android:textAlignment="center"
+                android:textColor="@color/lightblack"
+                android:textSize="19sp"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="12dp">
+
+        <RelativeLayout
+            android:id="@+id/mechRl"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/raw4"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:text="M"
+                android:textSize="28sp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/blue"
+                android:background="@drawable/curve"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/raw4"
+                android:text="Mechanical"
+                android:textAlignment="center"
+                android:textColor="@color/lightblack"
+                android:textSize="19sp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/chemRl"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/raw5"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:text="CH"
+                android:textSize="28sp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/mainappcolor"
+                android:background="@drawable/curve"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/raw5"
+                android:text="Chemical"
+                android:textAlignment="center"
+                android:textColor="@color/lightblack"
+                android:textSize="19sp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/civilRl"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/raw6"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:text="CV"
+                android:textSize="28sp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/secondary"
+                android:background="@drawable/curve"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/raw6"
+                android:text="Civil"
+                android:textAlignment="center"
+                android:textColor="@color/lightblack"
+                android:textSize="19sp"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
